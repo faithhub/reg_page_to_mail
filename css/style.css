@@ -63,10 +63,26 @@ a:hover {
     outline: none
 }
 
+.msg {
+    text-align: center
+}
+
 .error {
     color: red;
     font-family: cursive;
     padding-left: 10px;
+}
+
+.error2 {
+    color: red;
+    font-family: cursive;
+    padding-bottom: 10px;
+}
+
+.success {
+    color: green;
+    font-family: cursive;
+    padding-bottom: 10px;
 }
 
 .wrapper {
@@ -94,7 +110,7 @@ a:hover {
     font-size: 22px;
     font-family: muli-bold;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 15px;
     color: #333;
     letter-spacing: 2px
 }

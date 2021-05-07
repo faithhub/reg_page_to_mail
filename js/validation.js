@@ -51,10 +51,14 @@ $(function() {
             event.preventDefault();
             $.ajax({
                 type: "Post",
-                url: "../php/form.php",
+                url: "./php/form.php",
                 data: $('form').serialize(),
                 success: function(response) {
-                    console.log(response)
+                    if (response == "200") {
+                        $("#msg_suc").text("Thank you for registerring, we will get back to you shortly")
+                    } else {
+                        $("#msg_err").text("Please try again, something went wrong!")
+                    }
                 }
             });
             return false;
