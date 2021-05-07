@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RegistrationForm_v2 by Colorlib</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <form name="registration" id="form">
+                <h3>Registration Form</h3>
+                <div class="form-wrapper">
+                    <label for="">Full Name</label>
+                    <input type="text" class="form-control" name="name">
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" name="email">
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+                <div class="form-wrapper">
+                    <label for="">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirmpassword">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="terms"> I caccept the Terms of Use & Privacy Policy.
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <label id="terms-error" class="error" for="terms"></label>
+                <button type="submit">Register Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="js/validation.js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+
+</html>
