@@ -51,7 +51,7 @@ $(function() {
             event.preventDefault();
             $.ajax({
                 type: "Post",
-                url: "./php/form.php",
+                url: "../php/form.php",
                 data: $('form').serialize(),
                 success: function(response) {
                     console.log(response)
